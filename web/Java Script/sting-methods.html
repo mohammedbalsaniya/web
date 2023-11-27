@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>length</h3>
+    <script>
+        var str = "javascript is a great language";
+
+        var a = str.length
+
+        document.write(a);
+    </script>
+
+    <h3>toLowerCase()</h3>
+    <script>
+        var str = "javascript is a GREAT language";
+
+        var a = str.toLowerCase();
+
+        document.write(a);
+    </script>
+    <h3>toUpperCase()</h3>
+    <script>
+        var str = "javascript is a GREAT language";
+
+        var a = str.toUpperCase();
+
+        document.write(a);
+    </script>
+
+    <h3>includes()</h3>
+    <script>
+        var str = "javascript is a GREAT language";
+
+        var a = str.includes("is");
+
+        document.write(a);
+    </script>
+
+    <h3>startsWith()</h3>
+    <script>
+        var str = "javascript is a GREAT language";
+
+        var a = str.startsWith("jav");
+
+        document.write(a);
+    </script>
+
+    <h3>endsWith()</h3>
+    <script>
+        var str = "javascript is a GREAT language";
+
+        var a = str.endsWith("language");
+
+        document.write(a);
+    </script>
+
+    <h3>search()</h3>
+    <script>
+        var str = "javascript is a GREAT language";
+
+        var a = str.search("g");
+
+        document.write(a);
+    </script>
+
+    <h3>match()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.match(/is/g);
+
+        document.write(a);
+    </script>
+
+    <h3>indexOf()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.indexOf("is");
+
+        document.write(a);
+    </script>
+
+    <h3>lastIndexOf()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.lastIndexOf("is");
+
+        document.write(a);
+    </script>
+
+    <h3>replace()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.replace("javascript", "PHP");
+        //this use for globle
+        // var a = str.replace(/is/g, "PHP");
+
+        document.write(a);
+    </script>
+
+    <h3>trim()</h3>
+    <script>
+        var str = "   javascript   ";
+
+        var a = str.trim();
+
+        alert(a);
+    </script>
+
+    <h3>charAt()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.charAt(3);
+
+        document.write(a);
+    </script>
+
+    <h3>charCodeAt()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.charCodeAt(3);
+
+        document.write(a);
+    </script>
+
+    <h3>String.fromCharCode()</h3>
+    <script>
+
+        var a = String.fromCharCode(109)
+
+        document.write(a);
+    </script>
+
+    <h3>String.fromCharCode()</h3>
+    <script>
+
+        var a = String.fromCharCode(109)
+
+        document.write(a);
+    </script>
+
+    <h3>concat()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language ";
+        var str2 = " hello";
+
+        var a = str.concat(str2);
+
+        document.write(a);
+    </script>
+
+    <h3>split()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.split("is");
+
+        document.write(a);
+    </script>
+
+    <h3>repeat()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language -- ";
+
+        var a = str.repeat(3);
+
+        document.write(a);
+    </script>
+
+    <h3>slice()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var b = str.slice(3, 10);
+
+        document.write(b);
+    </script>
+
+    <h3>substr()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.substr(3,7);
+
+        document.write(a);
+    </script>
+
+    <h3>substring()</h3>
+    <script>
+        var str = "javascript is a GREAT  is language";
+
+        var a = str.substring(3, 7);
+
+        document.write(a);
+    </script>
+
+<h3>toString()</h3>
+<script>
+    var str = 50;
+
+    var a = str.toString();
+
+    document.write(a + 20);
+</script>
+
+
+<h3>valueOf()</h3>
+<script>
+    var str = "javascript is a GREAT  is language";
+
+    var a = str.valueOf();
+
+    document.write(a);
+</script>
+</body>
+
+</html>

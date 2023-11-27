@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = [11, 2, 3, 15];
+
+        var b = a.map(text);
+
+        document.write(b);
+
+        function text(x) {
+            return x * 10;
+        }
+    </script>
+
+    <h3>Array of object</h3>
+
+    <script>
+        var ary = [
+            {Fname : "mohammad",Lname : "balsaniya"},
+            {Fname : "aadil",Lname : "Shak"},
+            {Fname : "saad",Lname : "khan"},
+        ];
+
+        var c = ary.map(test);
+        document.write(c);
+
+        function test(s){
+            return s.Fname + " " + s.Lname;
+        }
+    </script>
+</body>
+
+</html>

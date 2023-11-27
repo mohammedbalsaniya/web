@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //bassic OOP
+        class hello {
+            message() {
+                console.log("Hello Everyone");
+            }
+            sorry() {
+                console.log("Sorry Everyone");
+            }
+        }
+
+        let a = new hello();
+
+        a.message();
+        a.sorry();
+
+    </script>
+
+    <br><br>
+    <script>
+        //constructor
+        class student {
+            constructor(name, age) {
+                this.studname = name;
+                this.studage = age;
+                console.log("constructor Functione");
+            }
+            //prototype
+            hii() {
+                console.log(`Hello  ${this.studname} Your age is ${this.studage}`);
+            }
+
+            //static
+            static staticMathod(){
+                console.log("static Functione");
+            }
+        }
+
+        let obj = new student("Mohammad", 19);
+        let objb = new student("Mohad", 29);
+
+
+
+        obj.hii();
+        objb.hii();
+        student.staticMathod();
+
+
+    </script>
+</body>
+
+</html>

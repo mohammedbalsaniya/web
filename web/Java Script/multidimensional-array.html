@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+        var ary = [
+            ["Hary", 18, "Male", "B.com"],
+            ["Sunny", 19, "Male", "m.com"],
+            ["sarah", 20, "Female", "Art"],
+            ["Tom", 18, "Male", "BCA"]
+        ];
+        document.write(ary.length);
+        document.write("<table border='1px'>");
+        for (var a = 0; a < ary.length; a++) {
+            document.write("<tr>")
+            for (var b = 0; b < ary[a].length; b++){
+                document.write("<td>" + ary[a][b] + "</td>");
+
+            }
+            document.write("</tr>");
+        }
+        document.write("</table")
+    </script>
+</head>
+
+<body>
+    <p> Multidimensional arrays are useful when you want to store data as a tabular form, like a table with rows and
+        columns.</p>
+    <h4>The length data property of an Array instance represents the number of elements in that array. The value is an
+        unsigned, 32-bit integer that is always numerically greater than the highest index in the array.</h4>
+
+</body>
+
+</html>

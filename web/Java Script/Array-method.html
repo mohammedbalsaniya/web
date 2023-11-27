@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <h3>Sort and Reverse</h3>
+    <script>
+        var a = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(a + "<br>");
+        a.sort();
+        document.write(a + "<br>");
+        a.reverse()
+        document.write(a + "<br>");
+    </script>
+    <h3>Pop and Push </h3>
+    <script>
+        var a = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(a + "<br>");
+        a.pop();
+        document.write(a + "<br>");
+        a.push("kiwi");
+        document.write(a + "<br>");
+    </script>
+    <h3>shift and unshift</h3>
+    <script>
+        var a = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(a + "<br>");
+        a.shift();
+        document.write(a + "<br>");
+        a.unshift("kiwi");
+        document.write(a + "<br>");
+    </script>
+
+    <h3>concat and join</h3>
+    <script>
+        var a = ["Banana", "Orange", "Apple", "Mango"];
+        var b = ["Rose", "Sunflowers"];
+        // var b = a.concat("Rose","Sunflowers");
+        var c = a.concat(b)
+        document.write(c + "<br>");
+        var d = c.join(" - ");
+        document.write(d + "<br>");
+
+    </script>
+
+    <h3>Slice and Splice </h3>
+    <script>
+        var a = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.write(a + "<br>");
+        //var b = a.slice(1);
+        //document.write(b + "<br>");
+        a.splice(2, 0, "Kiwi");
+        document.write(a + "<br>");
+
+    </script>
+    <h3>isArray </h3>
+    <script>
+        // var a = ["Banana", "Orange", "Apple", "Mango"];
+        var a = 10;
+
+        // document.write(a + "<br><br>");
+
+        // var b = Array.isArray(a);
+        // document.write(b + "<br><br><br>");
+
+        //if candition
+
+        //var a = "apple";
+        //document.write(a + "<br>")
+
+        if (Array.isArray(a)) {
+            document.write("This is a Array");
+        } else {
+            document.write("This is not an Array");
+        }
+    </script>
+
+    <h3>indexOf and lastIndexOf</h3>
+    <script>
+        var a = ["Banana", "Orange", "Apple", "Mango", "Apple", "kiwi"];
+
+        document.write(a + "<br><br>");
+
+        var b = a.indexOf("Apple");
+        document.write(b + "<br><br>");
+
+        var c = a.lastIndexOf("Apple");
+        document.write(c + "<br>");
+
+    </script>
+
+    <h3>includes</h3>
+
+    <script>
+        var a = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.write(a + "<br><br>");
+
+        var b = a.includes("Apple");
+
+        document.write(b + "<br><br>");
+
+    </script>
+
+    <h3>some and every</h3>
+    <script>
+        var ages = [10, 16, 18, 20,];
+        document.write(ages + "<br><br>");
+
+        var b = ages.some(checkAdult);
+
+        document.write(b + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        var c = [20, 30, 78, 43];
+
+        var d = c.every(allAdult);
+
+        document.write(d + "<br><br>");
+
+        function allAdult(num) {
+            return num >= 18;
+        }
+
+    </script>
+
+    <h3>find and findlndex</h3>
+    <script>
+        var ages = [10, 16, 18, 20,];
+        document.write(ages + "<br><br>");
+
+        var b = ages.find(check);
+        document.write(b + "<br><br>");
+
+        function check(esw) {
+            return esw >= 18;
+        }
+
+        var c = ages.findIndex(check);
+        document.write(c + "<br><br>");
+
+    </script>
+
+    <h3>filter</h3>
+    <script>
+        var an = [10, 20, 4, 66];
+        document.write(an + "<br><br>");
+
+        var b = an.filter(adul);
+        document.write(b + "<br><br>");
+
+        function adul(age) {
+            return age >= 18
+        }
+    </script>
+
+    <h3>toString, valueOf ,fill</h3>
+    <script>
+        var a = ["Banana", "Orange", "Apple", "Mango"];
+        a.toString();
+
+        document.write(a.valueOf() + "<br><br>");
+
+        var b = ["Banana", "Orange", "Apple", "Mango"];
+        b.fill("kiwi");
+
+        document.write(b);
+    </script>
+
+    <h3>forEach</h3>
+
+    <script>
+        var fruits = ["apple", "orange", "cherry"];
+        fruits.forEach(function (value,index) {
+            document.write(index + " : " + value + "<br>");
+        });
+
+    </script>
+</body>
+
+</html>

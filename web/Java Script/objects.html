@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+        var a = {
+            fname: 'mohammad',
+            lname: 'balsaniya',
+            age: 18,
+            email: 'mohammadbalsaniya@111gmail.com',
+            favMovie: ['hulk', 'superman', 'india'],
+            living: {
+                'city': 'mumbai',
+                'country': 'india',
+            },
+            salary: function () {
+                return 2500;
+            },
+            fullname: function () {
+                return this.fname + " " + this.lname;
+            }
+        }
+
+        document.write(a.age + "<br>");
+        console.log(a);
+        document.write(a.favMovie[2] + "<br>");
+        document.write(a.salary() + "<br>");
+        document.write(a.fullname() + "<br>");
+        document.write(a.living.city);
+</script>
+
+<h3>new </h3>
+
+<script>
+        var person = new Object();
+
+        person.firstname = 'mohammad';
+        person.lastname = 'balsaniya';
+        person.age = 20;
+
+        document.write(person.age)
+</script>
+</body>
+
+</html>

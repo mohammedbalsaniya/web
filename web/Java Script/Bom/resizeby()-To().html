@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openWindow()">open window</button>
+    <button onclick="resizeWindow()">Resize window</button>
+
+
+    <script>
+        var my;
+        function openWindow() {
+            my = window.open(" ", "", "width=200px,height=200px");
+            my.document.write("<p>this is uhu</p>")
+        }
+
+        function resizeWindow() {
+            my.resizeTo(400,400);
+        }
+    </script>
+</body>
+
+</html>

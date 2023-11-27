@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            height: 500px;
+            width: 90%;
+            background-color: yellowgreen;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .inner {
+
+            height: 300px;
+            width: 86%;
+            background-color: darkorange;
+            margin: 0px 100px auto;
+            display: flex;
+            padding-right: 40px;
+
+        }
+
+        .inner div {
+            border: 1px solid black;
+            height: 173px;
+            width: 85%;
+            display: flex;
+            margin: auto;
+            background-color: blueviolet;
+            align-items: center;
+            margin-right: 25px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer" id="outer">
+        <h2>Outer</h2>
+        <div class="inner" id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="Child-c">C</div>
+            <div>D</div>
+            <div>F</div>
+        </div>
+    </div>
+    <script src="dom-nav.js"></script>
+</body>
+
+</html>
